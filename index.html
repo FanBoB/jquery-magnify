@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magnify Examples</title>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/jquery.magnify.min.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-set">
+      <a data-magnify="gallery" href="img/a1.png">
+        <img width="200" src="img/a1.png" alt="">
+      </a>
+	  
+      <a data-magnify="gallery" href="img/a2.png">
+        <img width="200" src="img/a2.png" alt="">
+      </a>
+	  
+      <a data-magnify="gallery" href="img/a3.png">
+        <img width="200" src="img/a3.png" alt="">
+      </a>
+	  
+	  <a data-magnify="gallery" href="img/a4.png">
+        <img width="200" src="img/a4.png" alt="">
+      </a>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.magnify.min.js"></script>
+  <script>
+  $('[data-magnify]').magnify({
+    headToolbar: [
+		'close'
+    ],
+    footToolbar: [
+		'zoomIn',
+		'zoomOut',
+		'fullscreen',
+		'actualSize',
+		'rotateRight',
+		'rotateLeft'
+    ],
+    title: false
+  });
+
+  </script>
+</body>
+</html>
